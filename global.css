@@ -1,0 +1,46 @@
+*{
+    margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+   }
+   body{
+       font-family: sans-serif;
+       background-image: url();
+       background-repeat: no-repeat;
+       background-size: cover;
+       background: white;
+       }
+       header{
+       display: flex;
+       justify-content: space-between;
+       padding: 0px 50px;
+       margin-top: 40px;
+       }
+       h1{
+       color: rgb(0, 238, 255);
+       }
+       ul{
+       color:#c1cccb ;
+       list-style: none;
+       display: flex;
+       gap: 30px;
+       }
+       section{
+       display: flex;
+       justify-content: space-between;
+       padding: 0px 50px;
+       margin-top: 80px;
+       }
+       img{
+       width: 800px;
+       height: 800px;
+       }
+       button{
+        background-color: aqua;
+       }
+       ul{
+       display: flex;
+       }
+       p{
+        margin-bottom: 50px;
+       }

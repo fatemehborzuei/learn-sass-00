@@ -1,0 +1,124 @@
+$primary-color:#c6538c;
+@mixin flex($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  flex-direction: $dir;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+list-style-type: none;
+text-decoration: none;
+}
+@font-face {
+  font-family: Iran-sans-ultra-light;
+  src: url(../fonts/IRANSansX-UltraLight.woff2);
+}
+@font-face {
+  font-family: Iran-sans-thin;
+  src: url(../fonts/IRANSansX-Thin.woff2);
+}
+@font-face {
+  font-family: Iran-sans-regular;
+  src: url(../fonts/IRANSansX-Regular.woff2);
+}
+@font-face {
+  font-family: Iran-sans-medium;
+  src: url(../fonts/IRANSansX-Medium.woff2);
+}
+@font-face {
+  font-family: Iran-sans-light;
+  src: url(../fonts/IRANSansX-Light.woff2);
+}
+@font-face {
+  font-family: Iran-sans-heavy;
+  src: url(../fonts/IRANSansX-Heavy.woff2);
+}
+@font-face {
+  font-family: Iran-sans-extra-bold;
+  src: url(../fonts/IRANSansX-ExtraBold.woff2);
+}
+@font-face {
+  font-family: Iran-sans-extra-black;
+  src: url(../fonts/IRANSansX-ExtraBlack.woff2);
+}
+@font-face {
+  font-family: Iran-sans-demi-bold;
+  src: url(../fonts/IRANSansX-DemiBold.woff2);
+}
+@font-face {
+  font-family: Iran-sans-bold;
+  src: url(../fonts/IRANSansX-Bold.woff2);
+}
+@font-face {
+  font-family: Iran-sans-black;
+  src: url(../fonts/IRANSansX-Black.woff2);
+}
+$primary-color:#c6538c;
+@mixin flex($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+body{
+  background-color: deeppink;
+  direction: rtl;
+    font-family: Iran-sans-medium ;
+    main{
+      padding: 32px;
+      .wrapper{
+       @include flex(space-between, row, center){
+        margin-top: 50px;
+        h1{
+          font-size: 33px;
+          color: $heading-color;
+          line-height: 50px;
+          font-family: Iran-sans-bold;
+        }
+       }
+      }
+      }
+}
+  header{
+    width: 100%;
+    height:100vh;
+    nav{
+      width: 100%;
+        @include flex(space-between, flex-start);
+      ul{
+          @include flex(space-between, flex-start);
+        gap: 20PX;
+        li{
+          color: aqua;
+          a.download.app{
+            height: 48px;
+            background-color: pink;
+            text-decoration: none;
+            color:$primary-color;
+            padding: 20px;
+            border-radius: 8px;
+            .text-box{
+              width: 30px;
+              .img-box{
+                width: 40px;
+                img{
+                  width: 100px;
+                }
+              }
+            }
+            svg{
+              width: 18px;
+              height: 18px;
+              color: #c6538c;
+            }
+          }
+        }
+      }
+    }
+  }
+
+     
